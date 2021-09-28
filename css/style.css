@@ -1,0 +1,422 @@
+/* estilos gerais */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.img {
+    display: block;
+    max-width: 100%; /*respons. diminui*/
+}
+
+.btn {
+    border: 3px solid #000;
+    padding: 10px 30px; /*espaçamento em volta*/
+    color: #000000;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: lowercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: #82B4FF;
+    border-color: #82B4FF;
+}
+
+.subtitulo {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color:black;
+    text-transform: lowercase;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 10px;
+}
+
+.subtitulo:after {
+    content: ""; /*mesmo q vazio, use content*/
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: black;
+    margin: 8px auto;
+}
+
+.subtitulo-interno {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color:black;
+    text-transform: lowercase;
+    margin-bottom: 20px;
+}
+
+.subtitulo-interno:after {
+    content: ""; /*mesmo q vazio, use content*/
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: black;
+}
+
+/* header */
+
+.header {
+    position: fixed; /*mantém fixa, mesmo com scroll*/
+    top: 0;
+    width: 100%; /*largura <>*/
+    background: #fff;
+    padding: 15px 0; /*cria espaço ao redor do texto*/
+    z-index: 10; /*não deixa elementos por cima do fixed*/
+}
+
+.header_menu {
+    text-align: right;
+}
+
+.header_menu ul li {
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.header_menu ul li a {
+    color: #000;
+    font-weight: bold;
+    letter-spacing: .1em; /*espaço entre letras*/
+    font-size: 14px;
+    line-height: 20x; /*posição da linha*/
+    text-decoration: none; /*tira underline do link*/
+    padding: 10px 0px; /*top/bot&lados aumenta espaço clicável*/
+}
+
+.header_menu ul li a:hover { /*troca a cor do link no hover*/
+    color: #82B4FF;
+}
+
+.header_menu ul li a.menu_ativo {
+    color: #82B4FF;
+}
+
+.header_menu ul li a.menu_ativo:hover {
+    color: #000;
+}
+
+/* introdução */
+
+.introducao {
+    width: 100%;
+    height: 380px;
+    background: url("../img/topo-inicio.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    margin-top: 89px; /*distância margem de cima*/
+    padding-top: 80px; /*distância texto de cima*/
+}
+
+.introducao h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.quote-externo {
+    max-width: 400px;
+    margin: 0 auto;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.quote-externo p {
+    font-style: italic;
+}
+
+.quote-externo p:before, .quote-externo p:after { /*separadores*/
+    content: ""; /*mesmo q vazio, use content*/
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: black;
+    margin: 17px auto 17px auto; /*alinha ao centro*/
+}
+
+.quote-externo cite {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: .1em;
+}
+
+/* introdução interna */
+
+.introducao-interna {
+    width: 100%;
+    margin-top: 89px;
+    height: 160px;
+    text-align: center;
+    color: #000;
+    padding-top: 40px;
+}
+
+.introducao-interna h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.introducao-interna h1::after {
+    content: ""; /*mesmo q vazio, use content*/
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: black;
+    margin: 6px auto 10px auto; /*alinha ao centro*/
+}
+
+/* produtos */
+
+.produtos {
+    padding: 60px 0;
+}
+
+.produtos_lista li{
+    background: #E5F3FF;
+    text-align: center;
+    list-style-type: none; /*remove os bullet dots do ul/li*/
+}
+
+.produtos_lista li .mini_icon {
+    margin: 0 auto;
+    padding-top: 91px;
+    position: relative;
+}
+
+.produtos_lista li .minii {
+    right: 0 auto;
+    bottom: 35px;
+    position: relative;
+
+}
+
+.produtos_lista li h3{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: lowercase;
+    letter-spacing: .1em;
+    margin-top: 20px;
+    line-height: 20px; /*distancia entre uma linha e outra mesmo texto*/
+}
+
+.produtos_lista li h3:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: black;
+    margin: 8px auto;
+}
+
+.produtos_lista li p {
+    padding: 0 10px 10px 10px;
+}
+
+.produtos_icone {
+    background: white;
+    padding: 0;
+}
+
+.call {
+    text-align: center;
+    padding-top: 40px;
+    clear: both; /*tira float das colunas acima*/
+    
+}
+
+.call p {
+    margin-bottom: 20px;
+}
+
+/* portfolio */
+
+.portfolio {
+    width: 100%;
+    background: #000;
+    padding: 0 0 40px;
+    margin-top: 80px;
+}
+
+.portfolio .subtitulo {
+    color: #82B4FF;
+}
+
+.portfolio .subtitulo:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #82B4FF;
+    margin: 8px auto;
+}
+
+.portfolio_lista li:last-child { /*seleciona o último item da lista*/
+    margin-top: 20px;
+}
+
+.portfolio .btn {
+    border: 3px solid #82B4FF;
+    padding: 10px 30px; /*espaçamento em volta*/
+    color: #82B4FF;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: lowercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.portfolio .btn:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+.portfolio .call p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+/* qualidade */
+
+.qualidade {
+    padding: 0;
+}
+
+.qualidade .call {
+    margin-bottom: 60px;
+}
+
+.qualidade:after {
+    content: "";
+    width: 622px;
+    height: 88px;
+    display: block;
+    background: url("../img/linhas.svg") no-repeat center;
+    position: absolute;
+    top: 200px;
+    right: 166px;
+    z-index: -1;
+}
+
+.qualidade img{
+    margin: 0 auto;
+}
+
+.qualidade_lista {
+    padding-top: 40px;
+    overflow: hidden;
+}
+
+.qualidade_lista li {
+    text-align: center;
+    padding: auto; /* clear-fix */
+}
+
+.qualidade_lista li h3{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: lowercase;
+    letter-spacing: .1em;
+    margin-top: 20px;
+    line-height: 20px; /*distancia entre uma linha e outra mesmo texto*/
+}
+
+.qualidade li h3:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: black;
+    margin: 8px auto;
+}
+
+/* quebra */
+
+.quebra {
+    background: url(../img/footer-quote.jpg) no-repeat center;
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    margin-top: 0px; /*distancia topo do quote*/
+    text-align: center;
+}
+
+.quebra .quote-externo {
+    padding: 60px;
+    max-width: 500px;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer h3 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #E5F3FF;
+    text-transform: lowercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+}
+
+.footer h3:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #E5F3FF;
+    margin: 4px 0 10px 0;
+}
+
+.footer_historia {
+    text-align: justify;
+    padding: 0 30px 0 0;
+}
+
+.footer_contato ul li{
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 20px;
+}
+
+.footer_redes ul li{
+    display: inline-block;
+
+}
+
+.footer_redes ul li a {
+    margin-right: 18px;
+}
+
+.copy {
+    width: 100%;
+    background: #000;
+    padding: 20px 0;
+    color: #fff;
+    margin-top: 0;
+}

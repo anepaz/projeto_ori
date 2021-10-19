@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/produtos.css">
     <link rel="stylesheet" href="css/responsivo.css">
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
     <!-- menu topo -->
@@ -33,14 +34,14 @@
 <!--título do topo-->
     <section class="introducao-interna interna_produtos">
         <div class="container">            
-            <h1>produtos</h1>
-            <p>conheça os nossos produtos</p>
+            <h1 data-anime="400" class="fadeInDown">produtos</h1>
+            <p data-anime="800" class="fadeInDown">conheça os nossos produtos</p>
             </div>
     </section>
 
     <!-- produtos -->
 
-    <section class="container produto_item">
+    <section class="container produto_item fadeInDown" data-anime="1200">
         <div class="grid-11">
             <img src="img/produtos/minimalista.jpg" alt="minimalista">
         <h2>minimalistas</h2>
@@ -186,6 +187,9 @@
         </div>
     </div>
 </footer>
+
+<script src="./js/simple-anime.js"></script>
+<script src="./js/script.js"></script>
 
 </body>
 </html>

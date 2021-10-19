@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/responsivo.css">
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
     <!-- menu topo -->
@@ -32,18 +33,26 @@
     <section class="introducao-interna interna_portfolio">
         <div class="container">
             
-            <h1>portfólio</h1>
-            <p>conheça nosso portfólio</p>
+            <h1 data-anime="400" class="fadeInDown">portfólio</h1>
+            <p data-anime="800" class="fadeInDown">conheça nosso portfólio</p>
             </div>
     </section>
 <!-- fim título do topo -->
 
 <!-- quote -->
 
-<section class="portfolio-interno">
+<section class="portfolio-interno fadeInDown" data-slide="quote" data-anime="1200">
 <blockquote class="quote-portfolio">
     <p>“Todos os nossos projetos são feitos pensando na valorização de cada detalhe, é por isso que fazemos tudo com muito carinho, pensando sempre na pessoa que vai usar nossas peças.”</p>
     <cite>blueknits.</cite>
+</blockquote>
+<blockquote class="quote-portfolio">
+    <p>“Peças customizadas e criativas que com certeza irão complementar o seu estilo maravilhosamente.”</p>
+    <cite>Malina Dias</cite>
+</blockquote>
+<blockquote class="quote-portfolio">
+    <p>“Me encantei com a qualidade dos fios e o fator sustentabilidade é um plus.”</p>
+    <cite>Andressa Mech</cite>
 </blockquote>
 </section>
 
@@ -52,7 +61,7 @@
 <!-- mosaico -->
 
 <section class="portfolio">
-    <div class="container">
+    <div class="container" data-slide="portfolio">
         <ul class="portfolio_lista">
             <li class="grid-8">
                 <div class="portfolio_destaque">
@@ -61,6 +70,19 @@
             </li>
             <li class="grid-8">
                 <img src="img/portfolio2.jpg" alt="destaque 2">
+            </li>
+            <li class="grid-16"
+            ><img src="img/portfolio/destaque-port-3.jpg" alt="destaque 3">
+        </li>
+        </ul>
+        <ul class="portfolio_lista">
+            <li class="grid-8">
+                <img src="img/portfolio2.jpg" alt="destaque 2">
+            </li>
+            <li class="grid-8">
+                <div class="portfolio_destaque">
+                <img src="img/portfolio1.jpg" alt="destaque 1">
+                </div>
             </li>
             <li class="grid-16"
             ><img src="img/portfolio/destaque-port-3.jpg" alt="destaque 3">
@@ -111,6 +133,10 @@
         </div>
     </div>
 </footer>
+
+<script src="./js/simple-anime.js"></script>
+<script src="./js/simple-slide.js"></script>
+<script src="./js/script.js"></script>
 
 </body>
 </html>

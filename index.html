@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/responsivo.css">
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
     <!-- menu topo -->
@@ -32,18 +33,18 @@
     <section class="introducao">
         <div class="container">
             <!--título do topo-->
-            <h1>peças feitas à mão.</h1>
+            <h1 data-anime="400" class="fadeInDown">peças feitas à mão.</h1>
             <!--quote-->
-            <blockquote class="quote-externo">
+            <blockquote data-anime="800" class="fadeInDown quote-externo">
                 <p>peças únicas, feitas à mão e, especialmente, com o coração.</p>
             <!--citação-->
             <cite>blueknits.</cite>
             </blockquote>
-            <a href="produtos.html" class="btn">orçamentos</a>         
+            <a data-anime="1200" href="produtos.html" class="btn">orçamentos</a>         
         </div>
     </section>
 
-    <section class="produtos container">
+    <section class="produtos container fadeInDown" data-anime="1600">
         <h2 class="subtitulo">produtos</h2>
         <ul class="produtos_lista">
 
@@ -172,6 +173,9 @@
         </div>
     </div>
 </footer>
+
+<script src="./js/simple-anime.js"></script>
+<script src="./js/script.js"></script>
 
 </body>
 </html>

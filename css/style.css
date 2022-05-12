@@ -466,8 +466,6 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 
 }
 
-
-
 /* estilos gerais */
 
 body {
@@ -770,6 +768,10 @@ p {
 
 .qualidade {
     padding: 0;
+}
+
+.qualidade h3 {
+    color: black;
 }
 
 .qualidade .call {
@@ -1076,47 +1078,46 @@ p {
     background: #E5F3FF;
 }
 
-.form_orcamento {
-    padding: 60px;
+#form_orcamento {
+    padding-bottom: 60px;
 }
 
-.form_orcamento, label{
+#form_orcamento label{
+    color: #E5F3FF;
     display: block;
-    color: #fff;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
     margin: 10px auto 5px auto;
     line-height: 25px;
 }
 
-.form_orcamento, input {
+#form_orcamento input {
     display: block;
     width: 100%;
     border: 4px solid #E5F3FF;
     background: none;
-    color:#fff;
+    color: #E5F3FF;
     padding: 10px 0 10px 5px;
     outline: none;
     font-size: 14px;
 }
 
-.form_orcamento, textarea {
+#form_orcamento textarea {
     display: block;
     width: 100%;
     height: 120px;
     border: 4px solid #E5F3FF;
     background: none;
-    color:#fff;
     padding: 10px 0 10px 5px;
     outline: none;
     font-size: 14px;
+    color: #E5F3FF;
 }
 
-.form_orcamento, .btn {
-    border: 3px solid #000;
+#form_orcamento .btn {
+    border: 3px solid white;
     padding: 10px 30px; /*espaçamento em volta*/
-    color: #fff;
-    border-color: #E5F3FF;
+    color: #E5F3FF;
     background: none;
     font-size: 14px;
     line-height: 20px;
@@ -1127,13 +1128,11 @@ p {
     margin: 20px 0 40px;
 }
 
-.form_orcamento, .btn:hover {
-    color: #82B4FF;
+#form_orcamento .btn:hover {
     border-color: #82B4FF;
 }
 
 .orcamento_dados {
-    color: #fff;
     margin-left: 550px;
 }
 
@@ -1217,7 +1216,8 @@ p {
     padding: 40px 0;
 }
 
-.form_contato, label{
+#form_contato label{
+    color: black;
     display: block;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
@@ -1225,7 +1225,7 @@ p {
     line-height: 25px;
 }
 
-.form_contato, input {
+#form_contato input {
     display: block;
     width: 100%;
     border: 4px solid black;
@@ -1233,9 +1233,10 @@ p {
     padding: 10px 0 10px 5px;
     outline: none;
     font-size: 14px;
+    color: black;
 }
 
-.form_contato, textarea {
+ #form_contato textarea {
     display: block;
     width: 100%;
     height: 120px;
@@ -1246,7 +1247,7 @@ p {
     font-size: 14px;
 }
 
-.form_contato, .btn {
+#form_contato .btn {
     border: 3px solid #000;
     padding: 10px 30px; /*espaçamento em volta*/
     color: black;
@@ -1261,7 +1262,7 @@ p {
     margin: 20px 0 40px;
 }
 
-.form_contato, .btn:hover {
+#form_contato .btn:hover {
     color: #82B4FF;
     border-color: #82B4FF;
     cursor: pointer;
@@ -1282,8 +1283,6 @@ p {
     font-weight: bold;
     margin: 10px 0 10px 0;
 }
-
-
 
 .coluna_dados_redes {
     font-size: 18px;
@@ -1335,6 +1334,8 @@ p {
     .qualidade:after {
         right: 66px;
     }
+
+
 
     .qualidade_lista li {
         text-align: center;
@@ -1435,12 +1436,11 @@ p {
         
     }
 
-
 /* introdução */
 
 .introducao {
-    margin-top: 0px;
-    padding-top: 40px;
+    margin-top: 5em;
+    padding-top: 5em;
     background: url("../img/topo-inicio-mobile.jpg") no-repeat center;
 
 }
@@ -1496,11 +1496,21 @@ p {
 /* produtos */
 
 .produto_item {
-    left: -271px;
+    position: relative;
+    margin-right: 24.5em;
 }
 
 .produto_item h2 {
-    right: -260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 9em;
+}
+
+.produto_item h2:after, .produto_item h2:before {
+    margin: 10px; /*alinha ao centro*/
 }
 
 .produto_icone {
@@ -1552,10 +1562,6 @@ p {
 
 /* contato */
 
-.contato_dados {
-
-}
-
 .contato_mapa img {
     max-width: 100%;
     position: relative;
@@ -1567,7 +1573,7 @@ p {
 
 .contato_dados {
     color: black;
-    margin-left: 0px;
+    padding-left: 0;
 }
 
 .coluna_dados {

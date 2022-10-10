@@ -1291,6 +1291,7 @@ p {
     margin: 40px auto 20px auto;
     left: -10px;
     position: relative;
+    color: black;
 }
 
 .contato_dados span {
@@ -1589,6 +1590,7 @@ p {
     font-size: 14px;
     margin: 40px auto 20px auto;
     position: relative;
+    color: black;
 }
 
 .contato_dados span {
